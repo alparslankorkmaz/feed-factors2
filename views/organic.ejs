@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <body>
+    <div>
+      <%- include('../partials/header') %>
+
+      <!-- CONTENT -->
+      <!-- TITLE -->
+      <div class="index-title row justify-content-center mb-5">
+        <h1 class="text-center col-md-6">
+          ORGANIC
+          <span class="py-4 d-inline-block"
+            >WE ARE THE LARGEST ORGANIC GRAIN TRADING COMPANY IN THE UK!</span
+          >
+          <p class="h5">(WE ALSO HAVE A PRESENCE THROUGHOUT EUROPE)</p>
+        </h1>
+      </div>
+      <!-- IMAGE -->
+      <div class="container-fluid hero-image">
+        <div class="row mb-md-5 pb-md-5 justify-content-center">
+          <img
+            src="/images/products/organic.jpg"
+            alt=""
+            srcset=""
+            class="col-md-8 px-0"
+          />
+        </div>
+      </div>
+      <!-- TEXT -->
+      <div class="about-content container col-10 col-md-7">
+        <div class="row">
+          <p class="mt-5 pt-5 mt-md-0 pt-md-0 lh-lg">
+            Feed Factors has over 15 years’ experience in supplying organics
+            with long-standing relationships with numerous suppliers and many
+            loyal customers. With a wealth of experience, sourcing a range of
+            commodities from over 14 different countries throughout the globe,
+            we can offer numerous origins to suit the needs of our buyers.
+          </p>
+
+          <p class="lh-lg my-5">
+            From the farm to the fork we can provide traceability documents.
+            With our catalogue of premium products we provide full traceability
+            throughout the supply chain. This ensures the integrity of any
+            product marketed as organic.
+          </p>
+
+          <p class="lh-lg mb-5 pb-5">
+            Feed Factors Ltd, trades with full ‘Organic Food Federation’
+            approval, ensuring quality and traceability throughout.
+          </p>
+        </div>
+      </div>
+      <!-- PRODUCTS -->
+      <div class="container my-5 products">
+        <div class="row product-cards justify-content-around">
+          <div class="pet-food col-md-5 mb-md-0 mb-5">
+            <div class="card grow text-bg-dark">
+              <img src="/images/homepage/dog.jpg" class="card-img" alt="dog" />
+              <div
+                class="card-img-overlay d-flex justify-content-center align-items-end"
+              >
+                <a
+                  href="/petfood"
+                  class="fw-semibold fs-6 text-center text-decoration-none"
+                  >PET FOOD</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="animal-feed col-md-5">
+            <div class="card grow text-bg-dark">
+              <img
+                src="/images/homepage/chickens.jpg"
+                class="card-img"
+                alt="chickens"
+              />
+              <div
+                class="card-img-overlay d-flex justify-content-center align-items-end"
+              >
+                <a
+                  href="/animalfeed"
+                  class="fw-semibold fs-6 text-center text-decoration-none"
+                  >NON GM AND ANIMAL FEED</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/_valueadded') %> <%-
+      include('../partials/footer') %>
+    </div>
+    <%- include('../partials/scripts') %>
+  </body>
+</html>

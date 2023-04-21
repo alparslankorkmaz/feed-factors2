@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: url("/images/header/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden !important;
+}
+
+/* TYPOGRAPHY */
+a {
+  color: inherit;
+}
+
+h1,
+h3,
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+p,
+span,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+body .footer-info p {
+  margin-bottom: 0;
+}
+
+.index-title h1,
+span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.index-title span {
+  color: #b1882e;
+}
+
+/* TYPOGRAPHY HOMEPAGE */
+.home-info h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.home-info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.home-info span {
+  text-decoration: underline;
+}
+
+.home-info-text a {
+  text-decoration: underline;
+}
+
+#tmark {
+  color: #f5f5f5;
+  font-size: x-small;
+}
+
+@media (max-width: 575px) {
+  .home-info h2 {
+    font-size: 6vw;
+  }
+  .home-info p {
+    font-size: 4vw;
+  }
+
+  .home-info span {
+    font-size: 4vw;
+  }
+
+  .home-info-text a {
+    font-size: 4vw;
+  }
+
+  #tmark {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 575px) {
+  .home-info h2 {
+    font-size: 6vw;
+  }
+  .home-info p {
+    font-size: 4vw;
+  }
+
+  .home-info span {
+    font-size: 4vw;
+  }
+
+  .home-info-text a {
+    font-size: 4vw;
+  }
+
+  .tmark {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 768px) {
+  .home-info h2 {
+    font-size: 2.5vw;
+  }
+  .home-info p {
+    font-size: 1.2vw;
+  }
+
+  .home-info span {
+    font-size: 1.2vw;
+  }
+
+  .home-info-text a {
+    font-size: 1.2vw;
+  }
+
+  .tmark {
+    font-size: 0.5vw;
+  }
+}
+
+/* TYPOGRAPHY ABOUT PAGE */
+.about-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.about-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+/* TYPOGRAPHY CONTACT */
+.contact-info span {
+  color: #b1882e;
+}
+.contact-info p {
+  font-weight: 400;
+}
+
+/* NAVBAR MOBILE*/
+.p-menu1 {
+  height: 100%;
+}
+
+/* -------------------- MOBILE MENU --------------------- */
+
+/*  MOBILE HAMBURGER */
+.hamburger1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 120;
+  background-color: #b1882e;
+  width: 100%;
+}
+
+.hamburger1 div {
+  background-color: white;
+  position: relative;
+  width: 45px;
+  height: 4px;
+  margin: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle2 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 33px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -8px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: auto;
+}
+
+#toggle2:checked ~ .menu2 {
+  height: auto;
+}
+
+.hamburger1 .top {
+  margin-top: 15px;
+}
+.hamburger1 .bottom {
+  margin-bottom: 15px;
+}
+/* MOBILE HAMBURGER ENDS */
+
+.menu1 {
+  width: 100%;
+  background-color: #2a357a;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 10px 0;
+  font: 300 25px "Oswald", sans-serif;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.link1:hover {
+  background-color: #b1882e;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* products menu */
+.menu2 {
+  width: 100%;
+  background-color: #2a357a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu2 a:first-child {
+  margin-top: 10px;
+}
+
+.menu2 a:last-child {
+  margin-bottom: 10px;
+}
+
+.link2 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 300 15px "Oswald", sans-serif;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.link2:hover {
+  background-color: #b1882e;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* MOBILE MENU ENDS */
+
+/* FOOTER */
+
+footer {
+  margin-top: auto;
+}
+
+/* CAROUSEL */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+    transition: transform 0.1s ease-in-out;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.card {
+  border: none;
+  background: transparent;
+}
+
+/* CAROUSEL ENDS */
+
+footer .footer-content {
+  background-image: url("/images/footer/footerbg.png");
+  background-color: #333333;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-info {
+  color: white;
+  font-size: small;
+}
+
+.footer-info span {
+  color: #b1882e;
+  font-weight: 500;
+}
+
+.products-contact a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+
+.products-contact a:hover {
+  color: #b1882e;
+}
+
+.products-contact h5 {
+  margin-bottom: 16px;
+  color: #b1882e;
+  font-size: medium;
+}
+
+.products-contact p {
+  color: white;
+  font-size: small;
+}
+
+.products-contact span {
+  color: #b1882e;
+  font-weight: 500;
+}
+
+.footer-line {
+  background-color: #1f1f1f;
+}
+
+.footer-line a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+.footer-line a:hover {
+  color: #b1882e;
+}
+
+@media (min-width: 767px) {
+  .line-links:not(:first-child) {
+    border-left: 2px solid #b1882e;
+  }
+}
+
+@media (max-width: 767px) {
+  .line-links:not(:last-child) {
+    border-left: none;
+    border-bottom: 0.5px solid #b1882e !important;
+    padding: 5px;
+  }
+  .line-links {
+    padding: 5px;
+    max-width: 75%;
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+  }
+}
+
+/* HOMEPAGE INFO */
+
+.home-info {
+  background-color: #b1882e;
+}
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.home-img,
+.home-info {
+  grid-row: -1/2;
+}
+
+.home-img {
+  grid-column: 1/9;
+}
+
+.home-info {
+  grid-column: 2 / 8;
+  grid-row: -2/3;
+}
+
+/* PRODUCT CARDS */
+.card-img-overlay .text-center {
+  background-color: #b1882e;
+  padding: 10px;
+}
+
+.product-cards .card img {
+  border-radius: 0;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+/* VALUE ADDED */
+.value-added {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.value-img,
+.value-content {
+  grid-row: -1/2;
+}
+
+.value-img {
+  grid-column: 1/7;
+}
+
+.value-content {
+  grid-column: 2 / 6;
+  grid-row: -2/3;
+}
+
+/* AWARDS */
+
+.awards .row .card img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  background-color: white;
+}
+
+/* CONTACT FORM */
+
+input,
+textarea {
+  background-color: #d9d9d9;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: small;
+}

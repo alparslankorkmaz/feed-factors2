@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <body>
+    <div>
+      <%- include('../partials/header') %>
+
+      <div class="container col-8">
+        <div class="row justify-content-center">
+          <h1 class="fw-normal py-5">CONTACT US</h1>
+          <div class="contact-info col-12 col-md-4">
+            <p>The Gallery, Whittaker Avenue, Richmond, TW9 1EH</p>
+            <p><span>Tel:</span> <u>+44 (0) 208 332 1550</u></p>
+            <p><span>Admin Tel:</span> <u>+44 (0) 208 332 1992</u></p>
+            <p><span>Email:</span> trading@feedfactors.com</p>
+            <p>
+              <span>Admin Email:</span>
+              admin@feedfactors.com
+            </p>
+          </div>
+          <div class="col-12 col-md-8">
+            <form
+              id="fs-frm"
+              name="simple-contact-form"
+              accept-charset="utf-8"
+              action="https://formspree.io/f/xlekaeal"
+              method="post"
+              class="col-6 w-100 border-0"
+            >
+              <fieldset id="fs-frm-inputs">
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="Name"
+                  required=""
+                  class="w-100 my-2 border-0"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email-address"
+                  placeholder="Email"
+                  required=""
+                  class="w-100 my-2 border-0"
+                />
+                <textarea
+                  rows="7"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required=""
+                  class="w-100 my-2 border-0"
+                ></textarea>
+              </fieldset>
+              <input
+                type="submit"
+                value="Submit"
+                class="w-100 my-2 border-0 p-3"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/footer') %>
+    </div>
+    <%- include('../partials/scripts') %>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <body>
+    <div>
+      <%- include('../partials/header') %>
+
+      <!-- TITLE -->
+      <div class="index-title row justify-content-center mb-5">
+        <h1 class="text-center col-md-6">
+          NON GM AND ANIMAL FEED
+          <span class="py-4 d-inline-block"
+            >FEED FACTORS HAS BEEN IMPORTING SOYBEANS INTO THE UK FOR THE LAST
+            35 YEARS.</span
+          >
+        </h1>
+      </div>
+      <!-- IMAGE -->
+      <div class="container-fluid hero-image">
+        <div class="row mb-md-5 pb-md-5 justify-content-center">
+          <img
+            src="/images/products/chickens.jpg"
+            alt=""
+            srcset=""
+            class="col-md-8 px-0"
+          />
+        </div>
+      </div>
+      <!-- TEXT -->
+      <div class="about-content container col-10 col-md-7 pb-5">
+        <div class="row justify-content-between">
+          <p class="mt-5 pt-5 mt-md-0 pt-md-0 pb-4 lh-lg">
+            Feed Factors has been importing soybeans into the UK for the last 35
+            years. It continues to support and service the needs of the
+            customers throughout the country.
+          </p>
+
+          <p class="my-4">
+            Feed Factors also import and distribute Non-GM Soya meal. We have
+            the ability to deliver containers, curtain sider trucks - carrying
+            1mt totes, bulk blower lorries and 29mt bulk tippers.
+          </p>
+          <p class="my-4">
+            Fishmeal is sourced throughout the major producing countries across
+            the world which is stored in our Liverpool facility.
+          </p>
+        </div>
+      </div>
+      <!-- PRODUCTS -->
+      <div class="container my-5 products">
+        <div class="row product-cards justify-content-around">
+          <div class="organic col-md-5 mb-md-0 mb-5">
+            <div class="card grow text-bg-dark">
+              <img
+                src="/images/homepage/leaf.jpg"
+                class="card-img"
+                alt="leaf"
+              />
+              <div
+                class="card-img-overlay d-flex justify-content-center align-items-end"
+              >
+                <a
+                  href="/organic"
+                  class="fw-semibold fs-6 text-center text-decoration-none"
+                  >ORGANIC</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="petfood col-md-5">
+            <div class="card grow text-bg-dark">
+              <img src="/images/homepage/dog.jpg" class="card-img" alt="dog" />
+              <div
+                class="card-img-overlay d-flex justify-content-center align-items-end"
+              >
+                <a
+                  href="/petfood"
+                  class="fw-semibold fs-6 text-center text-decoration-none"
+                  >PET FOOD</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('../partials/_valueadded') %> <%-
+      include('../partials/footer') %>
+    </div>
+    <%- include('../partials/scripts') %>
+  </body>
+</html>

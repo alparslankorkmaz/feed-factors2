@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <body>
+    <div>
+      <%- include('../partials/header') %>
+
+      <!-- CONTENT -->
+      <h1 class="text-center fw-normal">PRODUCTS</h1>
+      <!-- SLIDER -->
+      <div
+        class="slider container-fluid mt-5"
+        data-aos="fade-up"
+        data-aos-delay="750"
+      >
+        <div class="slider-wrapper">
+          <div>
+            <div class="app">
+              <div class="cardList">
+                <button
+                  id="slider-button"
+                  class="cardList__btn btn btn--left ms-5 ps-5"
+                >
+                  <div class="icon fs-1 text-white"><</div>
+                </button>
+
+                <div class="cards__wrapper">
+                  <div class="slider-card current--card">
+                    <div class="card__image">
+                      <a href="/petfood">
+                        <span class="link-spanner"></span>
+                      </a>
+                      <img src="/images/homepage/dog.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="slider-card next--card">
+                    <div class="card__image">
+                      <a href="/organic">
+                        <span class="link-spanner"></span>
+                      </a>
+                      <img src="/images/homepage/leaf.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="slider-card previous--card">
+                    <div class="card__image">
+                      <a href="/animalfeed">
+                        <span class="link-spanner"></span>
+                      </a>
+                      <img src="/images/homepage/chickens.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  id="slider-button"
+                  class="cardList__btn btn btn--right me-5 pe-5"
+                >
+                  <div class="icon fs-1 text-white">></div>
+                </button>
+              </div>
+
+              <div class="infoList">
+                <div class="info__wrapper">
+                  <div class="info current--info">
+                    <p class="h1 text name">PET FOOD</p>
+                    <p class="h5 text location">Grain Free Ingredients</p>
+                    <p class="text description">
+                      the largest supplier of ‘grain free ingredients’ <br />
+                      botn in the UK and the continent
+                    </p>
+                  </div>
+
+                  <div class="info next--info">
+                    <p class="h1 text name">ORGANIC</p>
+                    <p class="h5 text location">15 years of experience</p>
+                    <p class="text description">traceable throughout</p>
+                  </div>
+
+                  <div class="info previous--info">
+                    <p class="h1 text name">
+                      NON GM <br />
+                      & ANIMAL FEED
+                    </p>
+                    <p class="h5 text location">Value added</p>
+                    <p class="text description">
+                      importing soybeans into the UK for the last 35 years
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="app__bg">
+                <div class="app__bg__image current--image">
+                  <img src="/images/homepage/dog.jpg" alt="" />
+                </div>
+                <div class="app__bg__image next--image">
+                  <img src="/images/homepage/leaf.jpg" alt="" />
+                </div>
+                <div class="app__bg__image previous--image">
+                  <img src="/images/homepage/chickens.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/footer') %>
+    </div>
+    <%- include('../partials/scripts') %>
+  </body>
+</html>
