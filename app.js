@@ -61,6 +61,11 @@ app.get("/termsofuse", (req, res) => {
   res.render(__dirname + "/views/termsofuse.ejs");
 });
 
+app.use((req, res, next) => {
+  res.render(__dirname + "/views/404.ejs");
+  next();
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Serving on port ${port}`);
