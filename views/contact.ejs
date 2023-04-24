@@ -6,8 +6,8 @@
     <div>
       <%- include('../partials/header') %>
 
-      <div class="container col-8">
-        <div class="row justify-content-center">
+      <div class="container col-10">
+        <div class="row justify-content-around">
           <h1 class="fw-normal py-5">CONTACT US</h1>
           <div class="contact-info col-12 col-md-4">
             <p>The Gallery, Whittaker Avenue, Richmond, TW9 1EH</p>
@@ -18,8 +18,17 @@
               <span>Admin Email:</span>
               admin@feedfactors.com
             </p>
+            <div class="map mb-5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2479.355977570622!2d-0.34187116721190464!3d51.580038894611484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761372f8e6e445%3A0x94114121fb992701!2sFeed%20Factors%20Ltd!5e0!3m2!1sen!2suk!4v1680613191290!5m2!1sen!2suk"
+                style="border: 0; height: 45vh; width: 45vh"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-6">
             <form
               id="fs-frm"
               name="simple-contact-form"
@@ -46,7 +55,7 @@
                   class="w-100 my-2 border-0"
                 />
                 <textarea
-                  rows="7"
+                  rows="15"
                   name="message"
                   id="message"
                   placeholder="Message"
