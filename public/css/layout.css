@@ -152,9 +152,12 @@ span {
 /* TYPOGRAPHY CONTACT */
 .contact-info span {
   color: #b1882e;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 .contact-info p {
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 /* NAVBAR MOBILE*/
